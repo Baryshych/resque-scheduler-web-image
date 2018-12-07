@@ -1,0 +1,13 @@
+version: "3"
+services:
+
+  web:
+    build: .
+    volumes:
+      - ./:/app
+    working_dir: /app
+    command: puma
+    ports:
+      - 3000:3000
+    environment:
+      REDIS_URL: redis://localhost:6379/
