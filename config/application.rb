@@ -27,9 +27,9 @@ module Untitled1
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
 
-    config.log_level = :debug
-    config.log_tags  = [:subdomain, :uuid]
-    config.logger    = ActiveSupport::TaggedLogging.new(Logger.new(STDOUT))
+    # config.log_level = :debug
+    # config.log_tags  = [:subdomain, :uuid]
+    # config.logger    = ActiveSupport::TaggedLogging.new(Logger.new(STDOUT))
 
     # config.cache_store = :redis_store, ENV['CACHE_URL'],
     #     { namespace: 'drkiq::cache' }
